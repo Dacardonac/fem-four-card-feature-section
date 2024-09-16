@@ -1,4 +1,7 @@
+@use '../utils/mixins' as *;
+
 .footer {
+  @include poppins-600;
 
   &__attribution {
     font-size: 11px; text-align: center;
