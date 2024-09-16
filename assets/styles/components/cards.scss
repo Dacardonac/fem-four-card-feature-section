@@ -2,23 +2,22 @@
 
 .content {
   @include poppins;
-  max-width: 300px;
+  max-width: 19.438rem;
   margin: 0 auto;
   font-weight: 400;
 
   &__card {
-    width: 311px;
+    width: 19.438rem;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
     user-select: none;
-    cursor: pointer;
   }
 
   &__card-title {
     color: var(--very-dark-blue);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: auto;
     margin: 0;
     font-weight: 600;
@@ -27,46 +26,46 @@
 
   &__card-description {
     color: var(--grayish-blue);
-    font-size: 13px;
-    line-height: 23px;
-    margin-top: 5px;
+    font-size: 0.813rem;
+    line-height: 1.438rem;
+    margin-top: 0.313rem;
     margin-bottom: 0;
-    letter-spacing: 0.09px;
+    letter-spacing: 0.006rem;
     user-select: text;
   }
 
   &__card-image {
-    width: 57px;
+    width: 3.563rem;
     height: auto;
-    margin-top: 33px;
+    margin-top: 2.063rem;
     margin-left: auto;
   }
 
   &__card--supervisor {
-    border-top: 4px solid var(--cyan);
-    border-radius: 8px;
-    padding: 28px;
-    margin-bottom: 25px;
+    border-top: 0.25rem solid var(--cyan);
+    border-radius: 0.5rem;
+    padding: 1.75rem;
+    margin-bottom: 1.563rem;
   }
 
   &__card--team {
-    border-top: 4px solid var(--red);
-    border-radius: 8px;
-    padding: 28px;
-    margin-bottom: 25px;
+    border-top: 0.25rem solid var(--red);
+    border-radius: 0.5rem;
+    padding: 1.75rem;
+    margin-bottom: 1.563rem;
   }
 
   &__card--karma {
-    border-top: 4px solid var(--orange);
-    border-radius: 8px;
-    padding: 28px;
-    margin-bottom: 25px;
+    border-top: 0.25rem solid var(--orange);
+    border-radius: 0.5rem;
+    padding: 1.75rem;
+    margin-bottom: 1.563rem;
   }
 
   &__card--calculator {
-    border-top: 4px solid var(--blue);
-    border-radius: 8px;
-    padding: 28px;
-    margin-bottom: 25px;
+    border-top: 0.25rem solid var(--blue);
+    border-radius: 0.5rem;
+    padding: 1.75rem;
+    margin-bottom: 1.563rem;
   }
 }
