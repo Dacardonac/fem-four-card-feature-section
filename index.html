@@ -14,13 +14,12 @@
   <meta name="googlebot" content="index,follow" />
   <meta name="revisit-after" content="15days" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com">
+  <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles/main.scss">
   <title>Frontend Mentor | Four card feature section</title>
 </head>
-
 <body>
   <header class="header">
     <h1 class="header__title">
@@ -36,22 +35,30 @@
       <article class=" content__card content__card--supervisor">
         <h2 class="content__card-title">Supervisor</h2>
         <p class="content__card-description">Monitors activity to identify project roadblocks</p>
-        <img class="content__card-image" src="./assets/images/icon-supervisor.svg" alt="Image of a Magnifying glass">
+        <figure class="content__card-image">
+          <img class="content__card-image-img" src="./assets/images/icon-supervisor.svg" alt="Image of a Magnifying glass">
+        </figure>
       </article>
       <article class="content__card content__card--team">
         <h2 class="content__card-title">Team Builder</h2>
         <p class="content__card-description">Scans our talent network to create the optimal team for your project</p>
-        <img class="content__card-image" src="./assets/images/icon-team-builder.svg" alt="Image team builder">
+        <figure class="content__card-image">
+          <img class="content__card-image-img" src="./assets/images/icon-team-builder.svg" alt="Image team builder">
+        </figure>
       </article>
       <article class="content__card content__card--karma">
         <h2 class="content__card-title">Karma</h2>
         <p class="content__card-description">Regularly evaluates our talent to ensure quality</p>
-        <img class="content__card-image" src="./assets/images/icon-karma.svg" alt="Image of a light bulb">
+        <figure class="content__card-image">
+          <img class="content__card-image-img" src="./assets/images/icon-karma.svg" alt="Image of a light bulb">
+        </figure>
       </article>
       <article class="content__card content__card--calculator">
         <h2 class="content__card-title">Calculator</h2>
         <p class="content__card-description">Uses data from past projects to provide better delivery estimates</p>
-        <img class="content__card-image" src="./assets/images/icon-calculator.svg" alt="Image of a monitor">
+        <figure class="content__card-image">
+          <img class="content__card-image-img" src="./assets/images/icon-calculator.svg" alt="Image of a monitor">
+        </figure>
       </article>
     </section>
   </main>

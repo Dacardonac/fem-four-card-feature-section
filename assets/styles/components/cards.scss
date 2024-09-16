@@ -34,11 +34,14 @@
     user-select: text;
   }
 
-  &__card-image {
-    width: 3.563rem;
-    height: auto;
+  &__card-image  {
     margin-top: 2.063rem;
     margin-left: auto;
+
+    &-img {
+      width: 3.563rem;
+      height: auto;
+    }
   }
 
   &__card--supervisor {
