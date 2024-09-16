@@ -1,0 +1,72 @@
+@use '../utils/mixins' as *;
+
+.content {
+  @include poppins;
+  max-width: 300px;
+  margin: 0 auto;
+  font-weight: 400;
+
+  &__card {
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__card-title {
+    color: var(--very-dark-blue);
+    font-size: 20px;
+    line-height: auto;
+    margin: 0;
+    font-weight: 600;
+    user-select: text;
+  }
+
+  &__card-description {
+    color: var(--grayish-blue);
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    letter-spacing: 0.09px;
+    user-select: text;
+  }
+
+  &__card-image {
+    width: 57px;
+    height: auto;
+    margin-top: 33px;
+    margin-left: auto;
+  }
+
+  &__card--supervisor {
+    border-top: 4px solid var(--cyan);
+    border-radius: 8px;
+    padding: 28px;
+    margin-bottom: 25px;
+  }
+
+  &__card--team {
+    border-top: 4px solid var(--red);
+    border-radius: 8px;
+    padding: 28px;
+    margin-bottom: 25px;
+  }
+
+  &__card--karma {
+    border-top: 4px solid var(--orange);
+    border-radius: 8px;
+    padding: 28px;
+    margin-bottom: 25px;
+  }
+
+  &__card--calculator {
+    border-top: 4px solid var(--blue);
+    border-radius: 8px;
+    padding: 28px;
+    margin-bottom: 25px;
+  }
+}

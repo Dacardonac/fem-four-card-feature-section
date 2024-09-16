@@ -1,6 +1,7 @@
 @use 'utils/variables';
 @use 'utils/mixins';
-@use 'base/normalize';
+@use 'base/reset';
 @use 'base/global';
+@use 'components/header';
 @use 'components/cards';
 @use 'components/footer';
