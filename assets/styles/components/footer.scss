@@ -3,6 +3,7 @@
 .footer {
   @include poppins;
   padding: 1.25rem;
+  margin-top: 1.25rem;
   font-weight: 600;
 
   &__attribution {

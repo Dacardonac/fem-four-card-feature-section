@@ -25,6 +25,17 @@
     color: var(--grayish-blue);
     line-height: 1.563rem;
     font-size: 0.938rem;
-    margin-top: 16px;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    max-width: 69.375rem;
+    padding: 5rem 17.813rem 2rem 17.813rem;
+
+    &__title {
+      font-size: 2.25rem;
+    }
   }
 }

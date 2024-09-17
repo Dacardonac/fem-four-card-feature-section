@@ -7,11 +7,11 @@
   font-weight: 400;
 
   &__card {
-    width: 19.438rem;
+    max-width: 19.438rem;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.45rem 0.45rem 0 rgba(0, 0, 0, 5%);
     user-select: none;
   }
 
@@ -70,5 +70,51 @@
     border-radius: 0.5rem;
     padding: 1.75rem;
     margin-bottom: 1.563rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content {
+    max-width: 69.375rem;
+    display: grid;
+    grid-template-areas:
+      "          .              team                .          "
+      "      supervisor         karma          calculator      ";
+    grid-gap: 1.875rem;
+    justify-content: center;
+    align-items: center;
+
+    &__card {
+      max-width: 21.875rem;
+      height: 15.625rem;
+      margin: 0;
+    }
+
+    &__card-image  {
+      margin-top: 2.5rem;
+
+      &-img {
+        width: 4rem;
+        height: auto;
+      }
+    }
+
+    &__card--supervisor {
+      grid-area: supervisor;
+      transform: translateY(-150px);
+    }
+
+    &__card--team {
+      grid-area: team;
+    }
+
+    &__card--karma {
+      grid-area: karma;
+    }
+
+    &__card--calculator {
+      grid-area: calculator;
+      transform: translateY(-150px);
+    }
   }
 }
